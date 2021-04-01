@@ -1,7 +1,7 @@
 import colors from './colors';
 
 // Example 1 of Chart inside src/views/Index.js (Sales value - Card)
-let chartExample1: Record<string, any> = {
+const chartExample1: Record<string, any> = {
   options: {
     scales: {
       yAxes: [
@@ -23,9 +23,9 @@ let chartExample1: Record<string, any> = {
     tooltips: {
       callbacks: {
         label: function (item: any, data: any) {
-          var label = data.datasets[item.datasetIndex].label || '';
-          var yLabel = item.yLabel;
-          var content = '';
+          const label = data.datasets[item.datasetIndex].label || '';
+          const yLabel = item.yLabel;
+          let content = '';
 
           if (data.datasets.length > 1) {
             content += label;
@@ -62,7 +62,7 @@ let chartExample1: Record<string, any> = {
 };
 
 // Example 2 of Chart inside src/views/Index.js (Total orders - Card)
-let chartExample2: Record<string, any> = {
+const chartExample2: Record<string, any> = {
   options: {
     scales: {
       yAxes: [
@@ -81,9 +81,9 @@ let chartExample2: Record<string, any> = {
     tooltips: {
       callbacks: {
         label: function (item: any, data: any) {
-          var label = data.datasets[item.datasetIndex].label || '';
-          var yLabel = item.yLabel;
-          var content = '';
+          const label = data.datasets[item.datasetIndex].label || '';
+          const yLabel = item.yLabel;
+          let content = '';
           if (data.datasets.length > 1) {
             content += label;
           }

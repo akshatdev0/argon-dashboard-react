@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
 import {
@@ -31,7 +31,7 @@ import {
   InputGroup,
   Row,
   Col,
-} from "reactstrap";
+} from 'reactstrap';
 
 const Login = () => {
   return (
@@ -50,13 +50,7 @@ const Login = () => {
                 onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
-                  <img
-                    alt="..."
-                    src={
-                      require("../../assets/img/icons/common/github.svg")
-                        .default
-                    }
-                  />
+                  <img alt="..." src={require('../../assets/img/icons/common/github.svg').default} />
                 </span>
                 <span className="btn-inner--text">Github</span>
               </Button>
@@ -67,13 +61,7 @@ const Login = () => {
                 onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
-                  <img
-                    alt="..."
-                    src={
-                      require("../../assets/img/icons/common/google.svg")
-                        .default
-                    }
-                  />
+                  <img alt="..." src={require('../../assets/img/icons/common/google.svg').default} />
                 </span>
                 <span className="btn-inner--text">Google</span>
               </Button>
@@ -91,11 +79,7 @@ const Login = () => {
                       <i className="ni ni-email-83" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input
-                    placeholder="Email"
-                    type="email"
-                    autoComplete="new-email"
-                  />
+                  <Input placeholder="Email" type="email" autoComplete="new-email" />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
@@ -105,23 +89,12 @@ const Login = () => {
                       <i className="ni ni-lock-circle-open" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input
-                    placeholder="Password"
-                    type="password"
-                    autoComplete="new-password"
-                  />
+                  <Input placeholder="Password" type="password" autoComplete="new-password" />
                 </InputGroup>
               </FormGroup>
               <div className="custom-control custom-control-alternative custom-checkbox">
-                <input
-                  className="custom-control-input"
-                  id=" customCheckLogin"
-                  type="checkbox"
-                />
-                <label
-                  className="custom-control-label"
-                  htmlFor=" customCheckLogin"
-                >
+                <input className="custom-control-input" id=" customCheckLogin" type="checkbox" />
+                <label className="custom-control-label" htmlFor=" customCheckLogin">
                   <span className="text-muted">Remember me</span>
                 </label>
               </div>
@@ -135,20 +108,12 @@ const Login = () => {
         </Card>
         <Row className="mt-3">
           <Col xs="6">
-            <a
-              className="text-light"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-            >
+            <a className="text-light" href="#pablo" onClick={(e) => e.preventDefault()}>
               <small>Forgot password?</small>
             </a>
           </Col>
           <Col className="text-right" xs="6">
-            <a
-              className="text-light"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-            >
+            <a className="text-light" href="#pablo" onClick={(e) => e.preventDefault()}>
               <small>Create new account</small>
             </a>
           </Col>
