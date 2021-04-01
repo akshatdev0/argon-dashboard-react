@@ -24,7 +24,7 @@ import { Container, Row, Col } from 'reactstrap';
 import AuthNavbar from 'components/Navbars/AuthNavbar';
 import AuthFooter from 'components/Footers/AuthFooter';
 
-import routes, { RouteProps } from 'routes';
+import routes, { RouteParams } from 'routes';
 
 const Auth = () => {
   const mainContent: RefObject<HTMLDivElement> = useRef({}) as RefObject<HTMLDivElement>;
@@ -36,6 +36,7 @@ const Auth = () => {
       document.body.classList.remove('bg-default');
     };
   }, []);
+
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     if (document.scrollingElement) {
@@ -46,7 +47,7 @@ const Auth = () => {
     }
   }, [location]);
 
-  const getRoutes = (routes: RouteProps[]) => {
+  const getRoutes = (routes: RouteParams[]) => {
     return routes.map((route, key) => {
       if (route.layout === '/auth') {
         return <Route path={route.layout + route.path} component={route.component} key={key} />;
