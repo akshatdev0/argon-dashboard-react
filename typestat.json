@@ -1,0 +1,19 @@
+[
+    {
+        "files": {
+            "renameExtensions": true
+        },
+        "fixes": {
+            "importExtensions": true
+        },
+        "project": "./tsconfig.json"
+    },
+    {
+        "fixes": {
+            "incompleteTypes": true,
+            "missingProperties": true,
+            "noImplicitAny": true
+        },
+        "project": "./tsconfig.json"
+    }
+]
