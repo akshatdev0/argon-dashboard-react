@@ -6,6 +6,9 @@
         "fixes": {
             "importExtensions": true
         },
+        "include": [
+            "src/**/*.{js,jsx}"
+        ],
         "project": "./tsconfig.json"
     },
     {
@@ -14,6 +17,9 @@
             "missingProperties": true,
             "noImplicitAny": true
         },
+        "include": [
+            "src/**/*.{js,jsx}"
+        ],
         "project": "./tsconfig.json"
     }
 ]
