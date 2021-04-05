@@ -23,7 +23,7 @@ import { Card, CardHeader, CardBody, Container, Row, Col, UncontrolledTooltip } 
 // core components
 import Header from 'components/Headers/Header';
 
-const Icons = () => {
+const Icons: React.FunctionComponent = () => {
   const [copiedText, setCopiedText] = useState('');
   return (
     <>

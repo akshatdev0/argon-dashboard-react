@@ -25,7 +25,7 @@ import Header from 'components/Headers/Header';
 
 declare global {
   interface Window {
-    google: any;
+    google: any;    // eslint-disable-line
   }
 }
 
@@ -114,7 +114,7 @@ const MapWrapper = () => {
   );
 };
 
-const Maps = () => {
+const Maps: React.FunctionComponent = () => {
   return (
     <>
       <Header />

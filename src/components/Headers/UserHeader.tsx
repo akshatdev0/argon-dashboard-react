@@ -20,7 +20,7 @@ import React from 'react';
 // reactstrap components
 import { Button, Container, Row, Col } from 'reactstrap';
 
-const UserHeader = () => {
+const UserHeader: React.FunctionComponent = () => {
   return (
     <>
       <div

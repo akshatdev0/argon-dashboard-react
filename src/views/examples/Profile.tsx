@@ -22,7 +22,7 @@ import { Button, Card, CardHeader, CardBody, FormGroup, Form, Input, Container, 
 // core components
 import UserHeader from 'components/Headers/UserHeader';
 
-const Profile = () => {
+const Profile: React.FunctionComponent = () => {
   return (
     <>
       <UserHeader />

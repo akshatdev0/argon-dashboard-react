@@ -35,7 +35,11 @@ import {
   Media,
 } from 'reactstrap';
 
-const AdminNavbar = (props: any) => {
+type Props = {
+  brandText: string;
+};
+
+const AdminNavbar: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">

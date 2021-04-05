@@ -155,7 +155,7 @@ var fonts = {
 // Methods
 
 // Chart.js global options
-function chartOptions() {
+function chartOptions() {   // eslint-disable-line
   // Options
   var options = {
     defaults: {
@@ -266,7 +266,7 @@ function chartOptions() {
 }
 
 // Parse global options
-function parseOptions(parent, options) {
+function parseOptions(parent, options) {   // eslint-disable-line
   for (var item in options) {
     if (typeof options[item] !== 'object') {
       parent[item] = options[item];

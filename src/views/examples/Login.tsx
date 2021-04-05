@@ -33,7 +33,7 @@ import {
   Col,
 } from 'reactstrap';
 
-const Login = () => {
+const Login: React.FunctionComponent = () => {
   return (
     <>
       <Col lg="5" md="7">

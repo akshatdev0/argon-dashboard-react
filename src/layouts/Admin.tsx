@@ -16,7 +16,7 @@
 
 */
 import React, { useRef, RefObject } from 'react';
-import { useLocation, Route, Switch, Redirect } from 'react-router-dom';
+import { useLocation, Route, Switch, Redirect, RouteComponentProps } from 'react-router-dom';
 // reactstrap components
 import { Container } from 'reactstrap';
 // core components
@@ -26,7 +26,7 @@ import Sidebar from 'components/Sidebar/Sidebar';
 
 import routes, { RouteParams } from 'routes';
 
-const Admin = (props: any) => {
+const Admin: React.FunctionComponent<RouteComponentProps> = (props: RouteComponentProps) => {
   const mainContent: RefObject<HTMLDivElement> = useRef({}) as RefObject<HTMLDivElement>;
   const location = useLocation();
 

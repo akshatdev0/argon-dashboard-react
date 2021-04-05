@@ -40,7 +40,7 @@ import {
 // core components
 import Header from 'components/Headers/Header';
 
-const Tables = () => {
+const Tables: React.FunctionComponent = () => {
   return (
     <>
       <Header />

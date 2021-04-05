@@ -11,7 +11,7 @@ const chartExample1: Record<string, any> = {
             zeroLineColor: colors.gray[900],
           },
           ticks: {
-            callback: function (value: number) {
+            callback: function (value: number): string | undefined {
               if (!(value % 10)) {
                 return '$' + value + 'k';
               }
@@ -68,7 +68,7 @@ const chartExample2: Record<string, any> = {
       yAxes: [
         {
           ticks: {
-            callback: function (value: number) {
+            callback: function (value: number): number | undefined {
               if (!(value % 10)) {
                 //return '$' + value + 'k'
                 return value;

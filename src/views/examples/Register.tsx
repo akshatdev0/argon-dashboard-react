@@ -33,7 +33,7 @@ import {
   Col,
 } from 'reactstrap';
 
-const Register = () => {
+const Register: React.FunctionComponent = () => {
   return (
     <>
       <Col lg="6" md="8">

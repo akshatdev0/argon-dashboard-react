@@ -26,7 +26,7 @@ import AuthFooter from 'components/Footers/AuthFooter';
 
 import routes, { RouteParams } from 'routes';
 
-const Auth = () => {
+const Auth: React.FunctionComponent = () => {
   const mainContent: RefObject<HTMLDivElement> = useRef({}) as RefObject<HTMLDivElement>;
   const location = useLocation();
 

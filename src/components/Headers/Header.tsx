@@ -20,7 +20,7 @@ import React from 'react';
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from 'reactstrap';
 
-const Header = () => {
+const Header: React.FunctionComponent = () => {
   return (
     <>
       <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
